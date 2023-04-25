@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------- slick ------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--------------------- bootstrap ------------------------->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -12,88 +25,352 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+
+
+
+
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="header">
-          <!-- 導覽列 -->
-       <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <div class="nav-web d-flex justify-content-between container-fluid align-items-center">
-            <div><a class="navbar-brand" href="#">Offcanvas navbar</a></div>
-            <div>
-              <ul class="d-flex align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                    </li>
-                  </ul>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                </li>
-              </ul>
+            <!-- 輪播banner -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="picture/Banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <a class="scroll" href="#thank"><span></span>Scroll</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="picture/Banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="picture/Banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </div>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
+            <!-- 導覽列 -->
+            <nav class="navbar fixed-top">
+                <div class="nav-web d-flex justify-content-between container-fluid align-items-center">
+                    <div><a class="navbar-brand d-flex align-items-center justify-content-around" href="#">
+                            <img src="picture/LOGO.png" alt="" style="margin-right: 20px;">
+                            <div>
+                                <p>展營貿易有限公司</p>
+                                <span style="font-size: 10px; margin-top: -10px;">GRAND GLOBAL TRADING CO., LTD</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navtext">
+                        <ul class="d-flex align-items-center">
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" aria-current="page" href="#">關於展營</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">品牌總覽</a>
+                            </li>
+
+                            <li class="nav-item dropdown me-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    商品介紹
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown"">
+                                    <li><a class=" dropdown-item" href="#">Action</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                            </li>
+                        </ul>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">常見問題</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">聯絡我們</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </nav>
-      
+        <div class="content">
+            <!-- introduce -->
+            <div class="introduce">
+                <h2 class="fst-italic pb-5 pt-2">Enjoy a <span style="color:#b59962;">delicious</span> life</h2>
+                <div class="about mt-5">
+                    <div class="row justify-content-evenly align-items-center pt-5 pb-5">
+                        <div class="col-9">
+                            <div class="pic"><img src="picture/About_01.png" alt=""></div>
+                            <p class="mt-4 ps-2">展盈貿易，全方位的西式料理食材供應商<br>
+                                專精於美墨、歐陸食材商品流通<br>
+                                歐美優質品牌的常溫、低溫餐飲食材與烘焙材料<br>
+                                是您開展餐飲事業的最佳夥伴</p>
+                        </div>
+                        <div class="col-1">
+                            <h3>為生活帶來更豐富的美味與享受</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly align-items-center pt-5 pb-5">
+                        <div class="col-1">
+                            <h3>我們提供主要服務項目為 —</h3>
+                        </div>
+                        <div class="col-9">
+                            <div class="pic"><img src="picture/About_02.png" alt=""></div>
+                            <ul class="mt-4 ps-4" style="list-style-type:disc;">
+                                <li>歐美進口食材批發</li>
+                                <li>食品品牌代理進口</li>
+                                <li>專案採購客訂商品</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 精選商品 -->
+            <div class="special mt-5">
+                <div class="special-title px-5 py-2">
+                    <h2 class="fst-italic pt-2 pb-3">Special Select</h2>
+                    <h3>精選商品</h3>
+                </div>
+                <div class="special-list">
+                    <div class="special-pic">
+                        <div><img src="picture/product_01.png" alt=""></div>
+                        <div><img src="picture/product_01.png" alt=""></div>
+                        <div><img src="picture/product_01.png" alt=""></div>
+                        <div><img src="picture/product_01.png" alt=""></div>
+                        <div><img src="picture/product_01.png" alt=""></div>
+                        <div><img src="picture/product_01.png" alt=""></div>
+                    </div>
+                </div>
+
+
+
+                <hr style="color:#b59962; margin:100px auto;" size="5" width="30%">
+            </div>
+
+            <!-- 品牌總覽 -->
+            <div class="brand">
+                <h2 class="fst-italic pt-2 pb-3">Brand Introduction</h2>
+                <h3>品牌總覽</h3>
+                <div class="brand-list">
+                    <form class="filter my-5">
+                        <div class="filter-group">
+                            <select name="brand" class="brand-select">
+                                <option value="*">所有品牌</option>
+                                <option value=".black">優格飲、法式燉奶</option>
+                                <option value=".green">起司片、起司絲、起司塊</option>
+                                <option value=".white">奶油、鮮奶油、酸奶油</option>
+                            </select>
+                        </div>
+                    </form>
+                    <ul id="myslides" class="slick" style="margin: 0 auto;">
+                        <li class="slide white"><a href="#"><img src="picture/McDonald.png" alt=""></a></li>
+                        <li class="slide green"><a href="#"><img src="picture/KFC.png" alt=""></a></li>
+                        <li class="slide black"><a href="#"><img src="picture/PizzaHut.png" alt=""></a></li>
+                        <li class="slide red"><a href="#"><img src="picture/Domino.png" alt=""></a></li>
+                        <li class="slide green"><a href="#"><img src="picture/KFC.png" alt=""></a></li>
+                        <li class="slide black"><a href="#"><img src="picture/PizzaHut.png" alt=""></a></li>
+                        <li class="slide white"><a href="#"><img src="picture/McDonald.png" alt=""></a></li>
+                        <li class="slide black"><a href="#"><img src="picture/PizzaHut.png" alt=""></a></li>
+                        <li class="slide white"><a href="#"><img src="picture/McDonald.png" alt=""></a></li>
+                        <li class="slide green"><a href="#"><img src="picture/KFC.png" alt=""></a></li>
+                        <li class="slide white"><a href="#"><img src="picture/McDonald.png" alt=""></a></li>
+                        <li class="slide green"><a href="#"><img src="picture/KFC.png" alt=""></a></li>
+                        <li class="slide black"><a href="#"><img src="picture/PizzaHut.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
         </div>
-      </div>
-      
+    </div>
+
 </body>
+
+<script>
+    $(function () {
+        $('.scroll').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+        });
+    });
+
+
+    ////////////////////////////////品牌輪播//////////////////////////////
+
+    $(function () {
+        $('.slick').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+        });
+
+        // When the filter values are changed, 
+        // apply the filter to slick.
+        $('form.filter select').on('change', function () {
+            var filterClass = getFilterValue();
+            $('.filter-class').text(filterClass);
+            $('.slick').slick('slickUnfilter');
+            $('.slick').slick('slickFilter', filterClass);
+        });
+
+
+
+        /**
+         * This just reads the inputs from the 
+         * selects and creates the filter.
+         */
+        function getFilterValue() {
+            // Grab all the values from the filters.
+            var values = $('.filter-group').map(function () {
+                // For each group, get the select values.
+                var groupVal = $(this).find('select').map(function () {
+                    return $(this).val();
+                }).get();
+                // join the values together.
+                return groupVal.join('');
+            }).get();
+
+
+            // Remove empty strings from the filter array.
+            // and join together with a comma. this way you 
+            // can use multiple filters.
+            return values.filter(function (n) {
+                return n !== "";
+            }).join(',');
+        }
+
+
+        /**
+         * Add a filter group row.
+         */
+        $('.add-filter').on('click', function (event) {
+            event.preventDefault()
+            $('form.filter .filter-group').first().clone(true).insertBefore($('form.filter .add-filter'));
+        });
+    });
+
+    // input field 
+    function searchbyname() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('slidename');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myslides");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+
+
+
+    ////////////////////////////////////////////////////////////////////////////////
+
+
+    $(document).ready(function () {
+        $('.special-pic').slick({
+            infinite:true,
+            slidesToShow:3,
+            slidesToScroll:1,
+            speed:500,
+            autoplaySpeed:5000,
+            autoplay:true,
+            centerMode: true,
+            centerPadding: "0",
+            arrows:true,
+        });
+    });
+
+
+
+</script>
 
 </html>
