@@ -172,16 +172,20 @@ img {
 }
 
 
-.introduce, .brand, .special {
+.introduce, .brand, .special, .blog{
     width: 100%;
-    text-align: center;
+    text-align: center; 
+}
+
+.brand, .special, .blog{
+    margin: 150px auto;
 }
 
 .introduce p, .brand p, .special p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.brand h3, .special h3{
+.brand h3, .special h3, .blog .col-2 h3{
     font-size: 24px;
     padding: 0;
 }
@@ -279,3 +283,35 @@ img {
     opacity: .8; /* Add a hover effect to all links, except for headers */
 }
 
+
+/* ---------blog--------- */
+.blog{
+    width: 80%;
+}
+.blog .col-2, .blog .col-8{
+}
+
+.blog .col-2 h2{
+    color: #b59962;
+}
+
+.blog .col-2 h3{
+    writing-mode: vertical-lr;
+    display: inline-block;
+}
+
+.blog .col-8 img{
+
+}
+
+.blog .col-8 a{
+    text-decoration: none;
+    color: #303030;
+    padding: 20px 70px;
+    background-color: #ded1b9;
+    text-align: left; 
+}
+
+.blog .col-8 a:hover{
+    opacity: .8;
+}
