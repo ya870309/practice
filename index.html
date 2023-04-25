@@ -201,7 +201,7 @@
             </div>
 
             <!-- 精選商品 -->
-            <div class="special mt-5">
+            <div class="special">
                 <div class="special-title px-5 py-2">
                     <h2 class="fst-italic pt-2 pb-3">Special Select</h2>
                     <h3>精選商品</h3>
@@ -219,7 +219,7 @@
 
 
 
-                <hr style="color:#b59962; margin:100px auto;" size="5" width="30%">
+
             </div>
 
             <!-- 品牌總覽 -->
@@ -252,6 +252,33 @@
                         <li class="slide green"><a href="#"><img src="picture/KFC.png" alt=""></a></li>
                         <li class="slide black"><a href="#"><img src="picture/PizzaHut.png" alt=""></a></li>
                     </ul>
+                </div>
+                <hr style="color:#b59962; margin:100px auto;" size="5" width="30%">
+            </div>
+
+            <!-- 部落客 -->
+            <div class="blog row d-flex justify-content-evenly">
+                <div class="col-2">
+                    <h2 class="fst-italic pt-2 pb-3">Blog</h2>
+                    <h3 class="mt-5">部落客</h3>
+                </div>
+                <div class="col-8 d-flex justify-content-around">
+                    <a href="#" class="col-4 my-3">
+                        <div class="article">
+                            <img src="picture/product_01.png" alt="">
+                            <p class="my-3">2023.4.26</p>
+                            <h4 class="mb-3">泰式酸辣湯</h4>
+                            <span>查看更多...</span>
+                        </div>
+                    </a>
+                    <a href="#" class="col-4 my-3">
+                        <div class="article">
+                            <img src="picture/product_01.png" alt="">
+                            <p class="my-3">2023.4.26</p>
+                            <h4 class="mb-3">泰式紅咖哩</h4>
+                            <span>查看更多...</span>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -357,15 +384,15 @@
 
     $(document).ready(function () {
         $('.special-pic').slick({
-            infinite:true,
-            slidesToShow:3,
-            slidesToScroll:1,
-            speed:500,
-            autoplaySpeed:5000,
-            autoplay:true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            autoplaySpeed: 5000,
+            autoplay: true,
             centerMode: true,
             centerPadding: "0",
-            arrows:true,
+            arrows: true,
         });
     });
 
