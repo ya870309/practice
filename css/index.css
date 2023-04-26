@@ -304,7 +304,7 @@ img {
 .brand,
 .special,
 .blog {
-    margin: 150px auto;
+    margin: 150px auto; 
 }
 
 .introduce p,
@@ -381,7 +381,7 @@ section {
 .blog_bg{
     width: 450px;
     position: relative;
-    top:-250px;
+    top:-350px;
     left:-50px;
 }
 
@@ -519,14 +519,13 @@ section {
 /* ---------about--------- */
 
 .about {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    ;
 }
 
 .about .row {
-    width: 80%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 0 auto; 
 
 }
 
@@ -685,7 +684,7 @@ section {
 
 /* ---------blog--------- */
 .blog {
-    width: 80%;
+    width: 100%;
 }
 
 .blog .col-xxl-2 h2 {
@@ -749,6 +748,9 @@ section {
         writing-mode: horizontal-tb;
         margin-top: 0;
         margin-bottom: 80px;
+    }
+    .blog{
+        margin-bottom: 300px;
     }
 }
 
