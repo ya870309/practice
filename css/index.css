@@ -378,6 +378,13 @@ section {
     transform: rotate(160deg);
 }
 
+.blog_bg{
+    width: 450px;
+    position: relative;
+    top:-250px;
+    left:-50px;
+}
+
 @media (max-width:1600px) {
     .orange-2 {
         top: -200px;
@@ -386,6 +393,9 @@ section {
 
     .leaf-1 {
         left: 800px;
+    }
+    .blog_bg{
+        display: none;
     }
 }
 
@@ -485,7 +495,6 @@ section {
 @media (max-width:576px) {
     .orange-1 {
         width: 120px;
-        border: 2px solid red;
         top: 60px;
         left: -30px;
     }
@@ -739,7 +748,7 @@ section {
     .blog .col-xxl-2 h3 {
         writing-mode: horizontal-tb;
         margin-top: 0;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 }
 
