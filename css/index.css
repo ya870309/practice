@@ -56,9 +56,22 @@ img {
     object-fit: cover;
 }
 
+@media (max-width:375px) {
+    .carousel {
+        height: 667px;
+    }
+
+    .carousel-item img {
+        height: 650px;
+    }
+}
+
 /* 導覽列 */
 
 /* 大尺寸 */
+.navbar .container-fluid{
+    overflow: visible;
+}
 .navbar {
     margin: 50px 0 0;
     padding-left: 100px;
@@ -84,7 +97,7 @@ img {
     background-color: #ded1b9;
 }
 
-.dropdown-menu li a {
+.navtext .dropdown-menu li a {
     color: #303030;
     font-size: 16px;
 }
@@ -97,6 +110,7 @@ img {
 
 .offcanvas {
     background-color: #b59962;
+    overflow: scroll;
 }
 
 .offcanvas-body .nav-item .nav-link {
@@ -104,13 +118,24 @@ img {
     border-bottom: 1px solid #b59962;
 }
 
-.offcanvas-body .nav-item .nav-link:hover {
+.offcanvas-body .dropdown-menu li{
+    margin: 8px 0;
+}
+
+.offcanvas-body .dropdown-menu li:hover, .offcanvas-body .navbar-nav .nav-link:hover{
     color: #ded1b9;
 }
 
-.dropdown-menu {
+.offcanvas-body .dropdown-menu {
     border: none;
     background-color: #b59962;
+    border-top: 2px solid #ded1b9;
+    border-bottom: 2px solid #ded1b9;
+    margin-left: -100px;
+}
+
+.offcanvas-body .navbar-nav .nav-item{
+    padding-left: 35%;
 }
 
 .offcanvas-body .nav-item .dropdown-menu .dropdown-item {
@@ -172,13 +197,8 @@ img {
 }
 
 @media (max-width: 576px) {
-    .navbar {
-        margin: 5px 0 0;
-    }
-
     .navbar-brand img {
         width: 30px;
-        ;
     }
 
     .navbar-brand p {
@@ -304,7 +324,7 @@ img {
 .brand,
 .special,
 .blog {
-    margin: 150px auto; 
+    margin: 150px auto;
 }
 
 .introduce p,
@@ -336,6 +356,20 @@ img {
     }
 }
 
+@media (max-width: 375px) {
+    .special {
+        margin: 200px auto;
+    }
+
+    .blog {
+        margin: 50px auto;
+    }
+
+    .brand {
+        margin: -100px auto;
+    }
+}
+
 /* ---------背景圖片--------- */
 section {
     margin: -150px 0;
@@ -346,8 +380,8 @@ section {
     width: 300px;
     display: inline-block;
     position: relative;
-    top: 200px;
-    left: -80px;
+    top: 60px;
+    left: -70px;
     transform: rotate(10deg);
 }
 
@@ -355,16 +389,16 @@ section {
     width: 300px;
     display: inline-block;
     position: relative;
-    top: -200px;
-    left: 1600px;
+    top: -50px;
+    left: 80%;
 }
 
 .leaf-1 {
     width: 300px;
     display: inline-block;
     position: relative;
-    top: -30px;
-    left: 1200px;
+    top: -40px;
+    left: 63%;
     transform: rotate(-20deg);
 
 }
@@ -373,146 +407,99 @@ section {
     width: 300px;
     display: inline-block;
     position: relative;
-    top: 70px;
-    left: -200px;
+    top: 80px;
+    left: -250px;
     transform: rotate(160deg);
 }
 
-.blog_bg{
+.blog_bg {
     width: 450px;
     position: relative;
-    top:-350px;
-    left:-50px;
+    top: -350px;
+    left: -50px;
 }
-
-@media (max-width:1600px) {
-    .orange-2 {
-        top: -200px;
-        left: 1200px;
-    }
-
-    .leaf-1 {
-        left: 800px;
-    }
-    .blog_bg{
-        display: none;
-    }
-}
-
 
 @media (max-width:1400px) {
-    .orange-2 {
-        top: -200px;
-        left: 1000px;
-    }
-
-    .leaf-1 {
-        left: 600px;
-    }
-}
-
-@media (max-width:1200px) {
-    .section-2 {
-        margin-top: -200px;
-    }
-
     .orange-1 {
-        width: 200px;
+        width: 250px;
     }
 
     .orange-2 {
-        width: 200px;
-        top: -100px;
-        left: 810px;
+        width: 250px;
     }
 
     .leaf-1 {
         width: 250px;
-        top: -30px;
-        left: 530px;
+        left: 55%;
     }
 
     .leaf-2 {
-        width: 230px;
-        top: 130px;
+        width: 250px;
+    }
+
+    .blog_bg {
+        display: none;
     }
 }
 
 @media (max-width:1000px) {
     .orange-1 {
         width: 200px;
-        top: 100px;
-        left: -80px;
+        /* left: -70px; */
     }
 
     .orange-2 {
         width: 200px;
-        top: -100px;
-        left: 810px;
     }
 
     .leaf-1 {
-        width: 250px;
-        top: -30px;
-        left: 530px;
+        width: 200px;
     }
 
     .leaf-2 {
-        width: 230px;
-        top: 130px;
-    }
-}
-
-@media (max-width:786px) {
-    .section-1 {
-        margin-top: -100px;
-    }
-
-    .orange-1 {
-        width: 150px;
-        top: 100px;
-        left: -30px;
-    }
-
-    .orange-2 {
-        left: 610px;
-    }
-
-    .leaf-1 {
-        width: 150px;
-        top: -30px;
-        left: 350px;
-    }
-
-    .leaf-2 {
-        width: 230px;
-        top: 80px;
-        left: -280px;
-        transform: rotate(-20deg);
+        width: 200px;
     }
 }
 
 @media (max-width:576px) {
     .orange-1 {
-        width: 120px;
-        top: 60px;
-        left: -30px;
+        width: 150px;
+        /* left: -70px; */
     }
 
     .orange-2 {
-        width: 120px;
-        left: 410px;
+        width: 150px;
     }
 
     .leaf-1 {
-        left: 250px;
+        width: 100px;
+        left: 45%;
     }
 
     .leaf-2 {
-        width: 180px;
-        top: 80px;
-        left: -200px;
-        transform: rotate(-20deg);
+        width: 150px;
+        left: -180px;
+    }
+}
+
+@media (max-width:375px) {
+    .orange-1 {
+        width: 100px;
+        top: 170px;
+        left: -25px;
+    }
+
+    .orange-2 {
+        width: 150px;
+    }
+
+    .leaf-1 {
+        top: 15px;
+    }
+
+    .leaf-2 {
+        width: 150px;
+        left: -180px;
     }
 }
 
@@ -525,7 +512,7 @@ section {
 
 .about .row {
     width: 70%;
-    margin: 0 auto; 
+    margin: 0 auto;
 
 }
 
@@ -571,6 +558,10 @@ section {
     .about {
         width: 100%;
     }
+
+    .introduce h2 {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -594,6 +585,17 @@ section {
     }
 }
 
+@media (max-width: 375px) {
+    .introduce h2 {
+        margin-top: 150px;
+    }
+
+    .about .row .col-xxl-1 .change-title-sec,
+    .about .row .col-xxl-1 .change-title-first {
+        font-size: 16px;
+    }
+}
+
 /* ---------Special Seclect--------- */
 .special {
     background-color: #ded1b9;
@@ -610,8 +612,6 @@ section {
     background-color: #fff;
 }
 
-/* Special Seclect RWD */
-@media (max-width: 1400px) {}
 
 /* ---------brand introduce--------- */
 .brand-list {
@@ -749,7 +749,8 @@ section {
         margin-top: 0;
         margin-bottom: 80px;
     }
-    .blog{
+
+    .blog {
         margin-bottom: 300px;
     }
 }
