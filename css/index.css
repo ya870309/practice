@@ -645,7 +645,6 @@ section {
 
 #myslides {
     /* Remove default list styling */
-    width: 70%;
     list-style-type: none;
     padding: 0;
     margin: 0;
