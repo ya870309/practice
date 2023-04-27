@@ -645,6 +645,7 @@ section {
 
 #myslides {
     /* Remove default list styling */
+    width: 70%;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -705,7 +706,6 @@ section {
 
 .article div:first-child {
     background-color: #ded1b9;
-    padding: 30px;
     border-radius: 6px 6px 0 0;
     overflow: hidden;
 }
