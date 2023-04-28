@@ -613,6 +613,12 @@ section {
 }
 
 
+@media (max-width:1400px){
+    .product-list .autoplay p, .brand-list .slick p{
+        font-size: 13px;
+    }
+}
+
 
 /* ---------brand introduce--------- */
 .brand-list {
